@@ -12,7 +12,7 @@ def calcBMI(height, weight):
 	else:
 		category = 'Obese'
 
-	return round(bmi, 1), category
+	return bmi, category
     
 if __name__ == "__main__":
     print('Welcome to the BMI Calculator')
