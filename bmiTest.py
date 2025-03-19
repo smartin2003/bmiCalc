@@ -12,3 +12,10 @@ def testOverweight():
 
 def testObese():
 	assert calcBMI(68, 230) == (35.8, 'Obese')
+
+def testBoundaries():
+	assert calcBMI(68, 119) == (18.5, 'Normal Weight')
+	assert calcBMI(68, 160) == (24.9, 'Normal Weight')
+	assert calcBMI(68, 161) == (25.0, 'Overweight')
+	assert calcBMI(68, 192) == (29.9, 'Overweight')
+	assert calcBMI(68, 192.5) == (30.0, 'Obese')
