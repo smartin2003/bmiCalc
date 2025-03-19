@@ -13,6 +13,7 @@ def calcBMI(height, weight):
 		category = 'Obese'
 
 	return round(bmi, 1), category
+    
 if __name__ == "__main__":
     print('Welcome to the BMI Calculator')
     height = float(input('What is your height in inches? '))
