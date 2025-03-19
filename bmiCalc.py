@@ -14,8 +14,9 @@ def calcBMI(height, weight):
 
 	return bmi, category
 
-print('Welcome to the BMI Calculator')
-height = int(input('What is your height in inches? '))
-weight = int(input('What is your weight in pounds? '))
-bmi, category = calcBMI(height, weight)
-print(f'Your current BMI is {bmi:.1f} which would be categorized as {category}.')
+if __name__ == "__main__":
+	print('Welcome to the BMI Calculator')
+	height = int(input('What is your height in inches? '))
+	weight = int(input('What is your weight in pounds? '))
+	bmi, category = calcBMI(height, weight)
+	print(f'Your current BMI is {bmi:.1f} which would be categorized as {category}.')
